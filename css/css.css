@@ -1,0 +1,202 @@
+body{
+  font-family: 'Josefin Slab', sans-serif;
+  background-color: #eeeeee;
+}
+
+/* nav bar */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background: transparent;
+}
+
+.navbar-toggle{
+  border: none;
+  color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #333333;
+}
+.navbar-toggle:hover {
+    background: transparent;
+}
+.navbar{	
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+}
+.nav.navbar-nav li a {
+  font-family: 'Josefin Slab', sans-serif;  
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333333;
+}
+
+
+.main{
+  background-image: url("../images/lorna2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+
+}
+.vertical-center{
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  }
+
+.fa{
+  color:#333333;
+}
+
+.fa-github, .fa-codepen, .fa-linkedin{
+  padding: 0px 10px 0px 10px;
+}
+
+.jumboabout{
+  position: relative;
+}
+.fa-arrow-circle-down{
+  position: absolute;
+  bottom: 20px;
+  left:50%;
+  margin-left:-25px; 
+}
+.projdown{
+  bottom: 31px;
+}
+.fa-arrow-circle-up{
+  position: absolute;
+  top:55px;
+  left:50%;
+  margin-left:-25px; 
+}
+
+.jumboproj{
+  position: relative;
+}
+
+#proj1{
+  position: relative;
+  background-image: url("../images/top.png");
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+}
+#proj2{
+  background-image: url("../images/fcc.png");
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+}
+#proj3{
+  background-image: url("../images/tribute.png");
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+}
+#proj4{
+  background-image: url("../images/google.png");
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+}
+#proj5{
+  background-image: url("../images/etch.png");
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+}
+#proj6{
+  background-image: url("../images/slide.png");
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+}
+
+.btn{
+  margin-top: 150px;
+  bottom: 0;
+  width: 100px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.slgh{
+  margin-top: 178px;
+}
+
+ /*effects */
+.transition {
+  transform: scale(1);
+  animation: tada 1s;
+  
+}
+
+.overlay{
+ background: rgba(0, 0, 0, 0.85); 
+ left: 0;
+ right: 0;
+ position: absolute;
+ font-family: 'Ubuntu';
+ font-size: 19px;
+ color: #fff;
+ font-weight: bold;
+ display: none;
+ height: 100%;
+ padding-top: 15px;
+}
+
+
+#homedown{
+    display: block;
+}
+@media (max-width: 500px) 
+{
+    #homedown
+    {
+        display: none;
+    }
+}
+
+#homeup{
+    display: block;
+}
+@media (max-width: 500px) 
+{
+    #homeup
+    {
+        display: none;
+    }
+}
+
+#projdown{
+    display: block;
+}
+@media (max-width: 500px) 
+{
+    #projdown
+    {
+        display: none;
+    }
+}
+
+#aboutup{
+    display: block;
+}
+@media (max-width: 500px) 
+{
+    #aboutup
+    {
+        display: none;
+    }
+}
+
+
+
+
+
+
