@@ -19,7 +19,7 @@ body{
 .navbar-toggle:hover {
     background: transparent;
 }
-.navbar{	
+.navbar{  
   background: rgba(255, 255, 255, 0.7);
   border: none;
 }
@@ -154,7 +154,7 @@ body{
 #homedown{
     display: block;
 }
-@media (max-width: 500px) 
+@media (max-width: 600px) 
 {
     #homedown
     {
@@ -165,7 +165,7 @@ body{
 #homeup{
     display: block;
 }
-@media (max-width: 500px) 
+@media (max-width: 600px) 
 {
     #homeup
     {
@@ -176,7 +176,7 @@ body{
 #projdown{
     display: block;
 }
-@media (max-width: 500px) 
+@media (max-width: 600px) 
 {
     #projdown
     {
@@ -187,16 +187,11 @@ body{
 #aboutup{
     display: block;
 }
-@media (max-width: 500px) 
+@media (max-width: 600px) 
 {
     #aboutup
     {
         display: none;
     }
 }
-
-
-
-
-
 
