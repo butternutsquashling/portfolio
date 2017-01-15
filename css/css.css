@@ -44,8 +44,9 @@ body{
   min-height: 100vh;
   display: flex;
   align-items: center;
-
   }
+
+
 
 .fa{
   color:#333333;
@@ -92,25 +93,25 @@ body{
   background-position: center;
 }
 #proj3{
-  background-image: url("../images/tribute.png");
+  background-image: url("../images/quote.png");
   background-size: cover;
   height: 300px;
   background-position: center;
 }
 #proj4{
-  background-image: url("../images/google.png");
-  background-size: cover;
-  height: 300px;
-  background-position: center;
-}
-#proj5{
   background-image: url("../images/etch.png");
   background-size: cover;
   height: 300px;
   background-position: center;
 }
+#proj5{
+  background-image: url("../images/tribute.png");
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+}
 #proj6{
-  background-image: url("../images/slide.png");
+  background-image: url("../images/portfolio.png");
   background-size: cover;
   height: 300px;
   background-position: center;
@@ -118,6 +119,15 @@ body{
 
 .btn{
   margin-top: 150px;
+  bottom: 0;
+  width: 100px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#btn3{
+  margin-top: 123px;
   bottom: 0;
   width: 100px;
   font-weight: bold;
