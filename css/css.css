@@ -100,36 +100,42 @@ body{
   background-image: url("../images/fcc.png");
   background-size: cover;
   min-height: 300px;
+  min-width: 350px;
   background-position: center;
 }
 #proj2{
   background-image: url("../images/wiki.png");
   background-size: cover;
   min-height: 300px;
+  min-width: 350px;
   background-position: center;
 }
 #proj3{
   background-image: url("../images/quote.png");
   background-size: cover;
   min-height: 300px;
+  min-width: 350px;
   background-position: center;
 }
 #proj4{
   background-image: url("../images/etch.png");
   background-size: cover;
   min-height: 300px;
+  min-width: 350px;
   background-position: center;
 }
 #proj5{
   background-image: url("../images/tribute.png");
   background-size: cover;
   min-height: 300px;
+  min-width: 350px;
   background-position: center;
 }
 #proj6{
   background-image: url("../images/portfolio.png");
   background-size: cover;
   min-height: 300px;
+  min-width: 350px;
   background-position: center;
 }
 
