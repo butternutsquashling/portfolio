@@ -14,13 +14,13 @@ body{
   color: #fff;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #333333;
+    background-color: #861b39;
 }
 .navbar-toggle:hover {
     background: transparent;
 }
 .navbar{  
-  background: rgba(255, 255, 255, 1);
+  background: rgba(255, 255, 255, 0.85);
   border: none;
   padding-top: 5px;
   
@@ -29,12 +29,32 @@ body{
   font-family: 'Josefin Sans', sans-serif;  
   text-align: right;
   font-size: 2em;
-  color: #333333;
+  color: #861b39;
 }
 
-.navbar-brand{
+.nav.navbar-nav li a:hover,
+.nav.navbar-nav li a:focus,
+.nav.navbar-nav li a:active
+{
+  color: #561225;
+
+} 
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover{
   font-weight: bold;
   font-size: 2em;
+  color: #861b39;
+  padding-top: 10px;
+}
+
+.navbar-default .navbar-brand .fa-code{
+  color: #861b39;
+}
+
+a{
+  outline: 0;
+
 }
 .main{
   background-image: url("../images/lorna2.jpg");
@@ -53,46 +73,95 @@ body{
 
   }
 
+
+#titlepage{
+  text-align: center;
+}
+
 #web-dev{
-  font-size: 2.5em;
   padding-bottom: 20px;
 }
+
 
 .fa{
   color:#333333;
 }
 
-.fa-github, .fa-codepen, .fa-linkedin{
-  padding: 0px 10px 0px 10px;
+.title-icon{
+  padding: 0px 20px 0px 20px;
   color: #fff;
+  text-align: center;
 }
+
+
 
 #homedown{
   color: #fff;
 }
+
+#about-title{
+  color: #861b39;
+}
+
+b{
+  color: #861b39;
+}
+
 .jumboabout{
   position: relative;
   background-color: #fff;
 }
+
 .fa-arrow-circle-down{
   position: absolute;
-  bottom: 20px;
-  left:50%;
-  margin-left:-25px; 
+  bottom: 55px;
+  left: 50%;
+  margin-left: -10px; 
+  color: #861b39;
 }
+
 .projdown{
   bottom: 31px;
+  color: #861b39;
 }
+
 .fa-arrow-circle-up{
   position: absolute;
-  top:55px;
-  left:50%;
-  margin-left:-25px; 
+  top: 55px;
+  left: 50%;
+  margin-left: -10px; 
+  color: #861b39;
 }
 
 .jumboproj{
   position: relative;
   background-color: #fff;
+}
+
+#projects-title{
+  color: #861b39;
+}
+
+#projects-title, #projectstext{
+  text-align: right;
+}
+
+.fa-codepen {
+  padding: 0px 0px 0px 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.fa-github-alt {
+  padding: 0px 0px 0px 10px;
+  color: #333;
+  text-align: center;
+}
+
+.fa-home {
+  padding: 0px 0px 0px 10px;
+  color: #fff;
+  text-align: center;
 }
 
 #proj1{
@@ -102,7 +171,9 @@ body{
   min-height: 300px;
   min-width: 350px;
   background-position: center;
+
 }
+
 #proj2{
   background-image: url("../images/wiki.png");
   background-size: cover;
@@ -110,6 +181,7 @@ body{
   min-width: 350px;
   background-position: center;
 }
+
 #proj3{
   background-image: url("../images/quote.png");
   background-size: cover;
@@ -117,6 +189,7 @@ body{
   min-width: 350px;
   background-position: center;
 }
+
 #proj4{
   background-image: url("../images/etch.png");
   background-size: cover;
@@ -124,6 +197,7 @@ body{
   min-width: 350px;
   background-position: center;
 }
+
 #proj5{
   background-image: url("../images/tribute.png");
   background-size: cover;
@@ -131,6 +205,7 @@ body{
   min-width: 350px;
   background-position: center;
 }
+
 #proj6{
   background-image: url("../images/portfolio.png");
   background-size: cover;
@@ -139,17 +214,21 @@ body{
   background-position: center;
 }
 
+.overlay-text{
+  margin-top: 50px;
+}
+
 .btn{
-  margin-top: 200px;
+  margin-top: 100px;
   width: 100px;
   font-weight: bold;
   font-size: 15px;
   font-family: 'Ubuntu', sans-serif;
 }
 
-.slgh{
+/*.slgh{
   margin-top: 178px;
-}
+}*/
 
  /*effects */
 .transition {
@@ -159,7 +238,7 @@ body{
 }
 
 .overlay{
- background: rgba(0, 0, 0, 0.8); 
+ background: rgba(134, 27, 57, 0.95); 
  left: 0;
  right: 0;
  position: absolute;
