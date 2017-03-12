@@ -231,6 +231,19 @@ b{
   font-family: 'Josefin Sans', sans-serif;
 }
 
+footer{
+  background: rgba(134, 27, 57, 0.95);
+  color: #fff;
+  text-align: center;
+  min-height: 50px;
+  font-size: 1.5em;
+  padding-top: 10px;
+}
+
+.footer-icon{
+  color: #fff;
+}
+
 /*.slgh{
   margin-top: 178px;
 }*/
