@@ -171,7 +171,7 @@ b{
 
 #proj1{
   position: relative;
-  background-image: url("../images/fcc.png");
+  background-image: url("../images/weatherapp.png");
   background-size: cover;
   min-height: 300px;
   min-width: 350px;
@@ -204,7 +204,7 @@ b{
 }
 
 #proj5{
-  background-image: url("../images/rafael.png");
+  background-image: url("../images/fcc.png");
   background-size: cover;
   min-height: 300px;
   min-width: 350px;
