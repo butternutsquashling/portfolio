@@ -142,6 +142,10 @@ b{
   background-color: #fff;
 }
 
+.row{
+  text-align: center;
+}
+
 #projects-title{
   margin-top: 100px;
   color: #861b39;
@@ -171,7 +175,7 @@ b{
 
 #proj1{
   position: relative;
-  background-image: url("../images/calc.png");
+  background-image: url("../images/cssui.png");
   background-size: cover;
   min-height: 300px;
   min-width: 350px;
@@ -180,7 +184,7 @@ b{
 }
 
 #proj2{
-  background-image: url("../images/twitch.png");
+  background-image: url("../images/calc.png");
   background-size: cover;
   min-height: 300px;
   min-width: 350px;
@@ -188,7 +192,7 @@ b{
 }
 
 #proj3{
-  background-image: url("../images/weatherapp.png");
+  background-image: url("../images/twitch.png");
   background-size: cover;
   min-height: 300px;
   min-width: 350px;
@@ -196,7 +200,7 @@ b{
 }
 
 #proj4{
-  background-image: url("../images/wiki.png");
+  background-image: url("../images/weatherapp.png");
   background-size: cover;
   min-height: 300px;
   min-width: 350px;
@@ -204,7 +208,7 @@ b{
 }
 
 #proj5{
-  background-image: url("../images/quote.png");
+  background-image: url("../images/wiki.png");
   background-size: cover;
   min-height: 300px;
   min-width: 350px;
@@ -213,6 +217,13 @@ b{
 
 #proj6{
   background-image: url("../images/etch.png");
+  background-size: cover;
+  min-height: 300px;
+  min-width: 350px;
+  background-position: center;
+}
+#proj7{
+  background-image: url("../images/quote.png");
   background-size: cover;
   min-height: 300px;
   min-width: 350px;
@@ -268,6 +279,8 @@ footer{
  height: 100%;
  padding-top: 15px;
 }
+
+
 
 
 #homedown{

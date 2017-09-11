@@ -1,6 +1,6 @@
-$("#proj1, #proj2, #proj3, #proj4, #proj5, #proj6").hover(function(){
+$("#proj1, #proj2, #proj3, #proj4, #proj5, #proj6, #proj7").hover(function(){
 	$(this).find(".overlay").fadeIn(250);
-}, function(){ 
+}, function(){
 	$(this).find(".overlay").fadeOut(250);
 });
 
@@ -34,13 +34,3 @@ $(function() {
     }
   });
 });
-
-
-
-
-
-
-
-
-
-
