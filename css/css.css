@@ -50,6 +50,10 @@ body{
   padding-top: 10px;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+
 #m{
   color: #d35400;
 }
