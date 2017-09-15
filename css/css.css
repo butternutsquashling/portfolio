@@ -1,6 +1,6 @@
 body{
-  font-family: 'Roboto Condensed', sans-serif;
-  background-color: #fff;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  background-color: #ecf0f1;
 }
 
 /* nav bar */
@@ -11,54 +11,49 @@ body{
 
 .navbar-toggle{
   border: none;
-  color: #fff;
+  color: #ecf0f1;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #861b39;
+    color: #34495e;
 }
 .navbar-toggle:hover {
     background: transparent;
 }
 .navbar{
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(236, 240, 241,0.8);
   border: none;
   padding-top: 5px;
 
 }
 .nav.navbar-nav li a {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Encode Sans Condensed', sans-serif;
   text-align: right;
-  font-size: 2em;
-  color: #861b39;
+  font-size: 1.4em;
+  color: #34495e;
+  padding-top: 10px;
 }
 
 .nav.navbar-nav li a:hover,
 .nav.navbar-nav li a:focus,
 .nav.navbar-nav li a:active
 {
-  color: #561225;
-
+  color: #d35400;
 }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover{
-  font-weight: bold;
-  font-size: 2em;
-  color: #861b39;
+  font-family: 'Spirax', sans-serif;
+  font-size: 1.8em;
+  color: #34495e;
   padding-top: 10px;
 }
 
 .navbar-default .navbar-brand .fa-code{
-  color: #861b39;
+  color:#34495e;
 }
 
 a{
   outline: 0;
-
-}
-
-h1{
-  font-size: 50px;
 }
 
 .main{
@@ -66,80 +61,72 @@ h1{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, .7);
-  color: #fff;
-
+  color: #ecf0f1;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .7);
 }
+
 .vertical-center{
-  min-height: 100%;
-  min-height: 100vh;
+  min-height: 60%;
+  min-height: 60vh;
   display: flex;
   align-items: center;
-
   }
-
 
 #titlepage{
   text-align: center;
+}
+
+#my-name{
+  font-family: 'Spirax', sans-serif;
+  font-size: 6em;
+}
+
+.b{
+  font-weight: bold;
 }
 
 #web-dev{
   padding-bottom: 20px;
 }
 
-
 .fa{
   color:#333333;
 }
 
 .title-icon{
-  padding: 0px 20px 0px 20px;
+  padding: 20px 20px 0px 20px;
   color: #fff;
   text-align: center;
 }
 
-
-#homedown{
-  color: #fff;
+.about{
+  margin-top: 100px;
 }
 
 #about-title{
-  color: #861b39;
+  color: #d35400;
+  margin-left: 30px;
+  padding-bottom: 20px;
+  max-width: 800px;
+  margin: auto;
+  font-size: 2.4em;
 }
 
-b{
-  color: #861b39;
+.bold{
+  color: #d35400;
+  font-weight: bold;
 }
 
-.jumboabout{
-  position: relative;
-  background-color: #fff;
+p{
+  font-size: 1.3em;
+  max-width: 800px;
+  margin: auto;
+  padding-bottom: 10px;
 }
 
-.fa-arrow-circle-down{
-  position: absolute;
-  bottom: 55px;
-  left: 50%;
-  margin-left: -10px;
-  color: #861b39;
-}
-
-.projdown{
-  bottom: 31px;
-  color: #861b39;
-}
-
-.fa-arrow-circle-up{
-  position: absolute;
-  top: 55px;
-  left: 50%;
-  margin-left: -10px;
-  color: #861b39;
-}
-
-.jumboproj{
-  position: relative;
-  background-color: #fff;
+#last{
+  padding-bottom: 100px;
+  border-bottom: 5px solid #d35400;
 }
 
 .row{
@@ -147,12 +134,11 @@ b{
 }
 
 #projects-title{
-  margin-top: 100px;
-  color: #861b39;
-}
-
-#projects-title, #projectstext{
-  text-align: left;
+  font-size: 2.4em;
+  color: #d35400;
+  max-width: 800px;
+  margin: 100px auto;
+  margin-bottom: 50px;
 }
 
 .fa-codepen {
@@ -167,11 +153,6 @@ b{
   text-align: center;
 }
 
-.fa-home {
-  padding: 0px 0px 0px 10px;
-  color: #fff;
-  text-align: center;
-}
 
 #proj1{
   position: relative;
@@ -180,7 +161,6 @@ b{
   min-height: 300px;
   min-width: 350px;
   background-position: center;
-
 }
 
 #proj2{
@@ -237,18 +217,16 @@ b{
 .btn{
   margin-top: 100px;
   width: 120px;
-  font-weight: bold;
   font-size: 18px;
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 footer{
-  background: rgba(134, 27, 57, 0.95);
-  color: #fff;
+  color: #34495e;
   text-align: center;
   min-height: 50px;
   font-size: 1.5em;
   padding-top: 10px;
+  margin-top: 50px;
 }
 
 .footer-icon{
@@ -263,15 +241,14 @@ footer{
 .transition {
   transform: scale(1);
   animation: tada 1s;
-
 }
 
 .overlay{
- background: rgba(134, 27, 57, 0.95);
+ background: rgba(44, 62, 80,0.8);
  left: 0;
  right: 0;
  position: absolute;
- font-family: 'Josefin Sans';
+ font-family: 'Roboto', sans-serif;
  font-size: 25px;
  color: #fff;
  font-weight: bold;
@@ -283,57 +260,28 @@ footer{
 
 
 
-#homedown{
-    display: block;
-}
-@media (max-width: 780px)
+@media screen and (max-width:  780px)
 {
-    #homedown
-    {
-        display: none;
-    }
-}
 
-#homeup{
-    display: block;
-}
-@media (max-width: 780px)
-{
-    #homeup
-    {
-        display: none;
-    }
-}
-
-#projdown{
-    display: block;
-}
-@media (max-width: 780px)
-{
-    #projdown
-    {
-        display: none;
-    }
-}
-
-#aboutup{
-    display: block;
-}
-@media (max-width: 780px)
-{
-    #aboutup
-    {
-        display: none;
-    }
-}
-
-#projectstext{
-  display: inline-block;
-}
-@media (max-width:  780px)
-{
-  #projectstext
-  {
-    display: none;
+  .vertical-center{
+    min-height: 100%;
+    min-height: 100vh;
   }
+  #my-name
+  {
+    font-size: 4em;
+  }
+  .about{
+    margin-top: 50px;
+  }
+  #web-dev, #projects-title, #about-title{
+    font-size: 1.8em;
+  }
+  #projects-title{
+    margin-top: 70px;
+  }
+  #last{
+    padding-bottom: 70px;
+  }
+
 }
