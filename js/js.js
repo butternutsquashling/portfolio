@@ -5,14 +5,6 @@ $("#proj1, #proj2, #proj3, #proj4, #proj5, #proj6, #proj7").hover(function(){
 });
 
 
-$(".fa-github, .fa-codepen, .fa-linkedin").hover(function(){
-	$(this).addClass("transition");
-}, function()
-{
-	$(this).removeClass("transition");
-});
-
-
 
 $(".navbar-nav li a").click(function(event) {
         $(".navbar-collapse").collapse('hide');
