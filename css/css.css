@@ -15,8 +15,9 @@ body{
   color: #ecf0f1;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    color: #34495e;
+    background-color: #34495e;
 }
+
 .navbar-toggle:hover {
     background: transparent;
 }
@@ -235,16 +236,8 @@ footer{
   color: #fff;
 }
 
-/*.slgh{
-  margin-top: 178px;
-}*/
 
  /*effects */
-.transition {
-  transform: scale(1);
-  animation: tada 1s;
-}
-
 .overlay{
  background: rgba(44, 62, 80,0.8);
  left: 0;
