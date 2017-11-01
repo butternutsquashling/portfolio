@@ -4,120 +4,148 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lorna Mutton Portfolio</title>
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/css.css">
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
-    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Bitter|Zilla+Slab+Highlight" rel="stylesheet">
+    <title></title>
+    <script src="https://use.fontawesome.com/e186a6e390.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
+
   </head>
   <body>
-
-  <!-- navbar -->
-  <div class="navbar navbar-default navbar-fixed-top">
-    <div class="container fluid">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-        <a href="#home"><div class="navbar-brand"><span id="m">m</span>utton.</div></a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home" class="nvlinks">Home</a></li>
-          <li><a href="#about" class="nvlinks aboutlink">About</a></li>
-          <li><a href="#projects" class="nvlinks">Projects</a></li>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light bg-faded">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggling" aria-controls="navbarToggling" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggling">
+        <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+          <li class="nav-item">
+            <a><button class='nav-link about-link' onclick="ScrollTo('about')">About Me</button></a>
+          </li>
+          <li class="nav-item">
+            <a><button class='nav-link' onclick="ScrollTo('projects')">My Work</button></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/lmutton" target="_blank">GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://codepen.io/lmutton/" target="_blank">CodePen</a>
+          </li>
         </ul>
       </div>
-    </div>
-  </div>
-  <!-- main -->
-  <a name="home"></a>
-  <div class="jumbotron vertical-center main">
-      <div class="container" id="titlepage">
-        <h1 id='my-name'><span class="nameline">|</span> Lorna Mutton <span class="nameline">|</span></h1>
-        <h2 id="web-dev">Front-End Developer</h2>
-        <a href="https://github.com/lmutton" target="_blank"><span><i class="fa fa-github fa-3x title-icon"></i></span></a>
-        <a href="http://codepen.io/lmutton" target="_blank"> <span><i class="fa fa-codepen fa-3x title-icon"></i></span></a>
-    </div>
-
-  </div>
-<a name="about"></a>
-    <div class="container about">
-      <h1 id="about-title">Hello</h1>
-        <p>I'm a 27yo self-taught front-end dev from Cornwall/England that now resides here in Stockholm/Sweden.
-        I started my coding journey late 2016 and as of now I am mainly focused on <span class="bold">front-end</span> development, however this isn't my final form,
-        my goal is to become a full-stack developer!</p>
-        <p>In my spare time, I have taught myself
-        <span class="bold">HTML, CSS, SCSS</span> and <span class="bold">Bootstrap</span>, along with some <span class="bold">JavaScript, jQuery</span> and <span class="bold">Git</span>.
-        I'll admit I've still got a lot to learn, but that's what's so exciting,
-        there's so much to discover!<br> What am I up at the moment? Lots! I'm dipping my toes into the world of React which is awesome and super enjoyable to use,
-        I love a good challenge so It's been fun trying to get my head around it. The possibilities are endless!</p>
-        <p>What do I do when I'm not pushing code? Well you can find me playing Rugby with the Stockholm Berserkers, playing computer games, drinking tea, catching up on my reading
-        material and out walking/jogging with my dog.</p>
-        <p id="last"><span class="bold">p.s</span> Heres some awesome news, I'm in the process of rebuilding this site using React!
-          It's not quite live yet but if you fancy, you can view the code over on <a href="https://github.com/lmutton/LornaMutton" target="_blank"><span class="bold">GitHub</span></a>!</p>
-    </div>
-
-  <a name="projects"></a>
-    <div class="container projects">
-      <h1 id="projects-title">Some bits and pieces</h1>
-      <div class="row">
-        <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 text-center" id="proj1">
-        <div class="overlay"><div class="overlay-text"> JS/UIs/CSS<br></div>
-        <a href="https://github.com/lmutton/UIs-and-CSS" target="_blank" class="btn btn-default">GitHub<i class="fa fa-github-alt"></i></a>
-        <a href="https://lmutton.github.io/UIs-and-CSS/#/" target="_blank" class="btn btn-success">Live<i class="fa fa-codepen"></i></a>
-        </div></div>
-        <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 text-center" id="proj2">
-        <div class="overlay"><div class="overlay-text">Calculator<br></div>
-        <a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Calculator" target="_blank" class="btn btn-default">GitHub<i class="fa fa-github-alt"></i></a>
-        <a href="https://codepen.io/lmutton/full/KvJaOG/" target="_blank" class="btn btn-success">Live<i class="fa fa-codepen"></i></a>
-        </div></div>
-        <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 text-center" id="proj3">
-        <div class="overlay"><div class="overlay-text">Twitch<br></div>
-        <a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Twitch_Viewer" target="_blank" class="btn btn-default">GitHub<i class="fa fa-github-alt"></i></a>
-        <a href="http://codepen.io/lmutton/full/LWOVXv/" target="_blank" class="btn btn-success">Live<i class="fa fa-codepen"></i></a>
-        </div></div>
-        <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 text-center" id="proj4">
-        <div class="overlay"><div class="overlay-text">Weather<br></div>
-        <a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Weather_App" target="_blank" class="btn btn-default">GitHub<i class="fa fa-github-alt"></i></a>
-        <a href="http://codepen.io/lmutton/full/xqOBoG/" target="_blank" class="btn btn-success">Live<i class="fa fa-codepen"></i></a>
-        </div></div>
-        <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 text-center" id="proj5">
-        <div class="overlay"><div class="overlay-text">Wiki<br></div>
-        <a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Wiki_viewer" target="_blank" class="btn btn-default">GitHub<i class="fa fa-github-alt"></i></a>
-        <a href="http://codepen.io/lmutton/full/dNpxYa/" target="_blank" class="btn btn-success">Live<i class="fa fa-codepen"></i></a>
-        </div></div>
-        <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 text-center" id="proj6">
-        <div class="overlay"><div class="overlay-text">Etch-A-Sketch<br></div>
-        <a href="https://github.com/lmutton/The_Odin_Proj/tree/master/Web_Dev_101/JS_JQ_Prj_2_Etchasketch" target="_blank" class="btn btn-default">GitHub<i class="fa fa-github-alt"></i></a>
-        <a href="https://codepen.io/lmutton/full/WwKWER/" target="_blank" class="btn btn-success">Live<i class="fa fa-codepen"></i></a>
-        </div></div>
-        <div class="col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-2 text-center" id="proj7">
-        <div class="overlay"><div class="overlay-text">Quote Machine<br></div>
-        <a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Quote_API" target="_blank" class="btn btn-default">GitHub<i class="fa fa-github-alt"></i></a>
-        <a href="http://codepen.io/lmutton/full/ygJmLz/" target="_blank" class="btn btn-success">Live<i class="fa fa-codepen"></i></a>
-        </div></div>
+    </nav>
+    <!-- NAVBAR END -->
+    <!-- MAIN -->
+    <div class="jumbotron vertical-center home" id="home">
+      <div class="container">
+        <h1 class="my-name">Lorna Mutton</h1>
+        <h2 class="front-enddev">Front-End Developer</h2>
+        <div class="main-links-container">
+        <button class='main-links main-links-about' onclick="ScrollTo('about')">About Me</button>
+        <button class='main-links main-links-projects' onclick="ScrollTo('projects')">My Work</button>
+        <a href="https://github.com/lmutton" target="_blank"><button class='main-links main-links-github'>GitHub</button></a>
+        <a href="https://codepen.io/lmutton" target="_blank"><button class='main-links main-links-codepen'>CodePen</button></a>
+        </div>
+        <i class="fa fa-angle-double-down fa-2x" aria-hidden="true" onclick="ScrollTo('about')"></i>
       </div>
-</div>
+      <button class="top-button" onclick="ScrollTo('home')"><i class="fa fa-angle-double-up fa-3x" aria-hidden="true"></i></button>
+    </div>
+    <!-- MAIN END -->
+    <!-- ABOUT -->
+    <div class="jumbotron vertical-center about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h2 class="spacing">Hello, hows it going?</h2>
+              <p class="largertxt">I’m Lorna, a self-taught aspiring and passionate front-end dev. I'm originally from a beautiful little place called Cornwall
+                down in the sout-west of England, but now live here in the amazing city of Stockholm/Sweden.</p>
+              <p class="largertxt">In my spare time, I have taught myself <span class="high-light">HTML5, CSS3, SCSS</span> and <span class="high-light">Bootstrap</span>,
+                 along with a little <span class="high-light">JavaScript</span> and <span class="high-light">jQuery</span>.
+                Ill admit Ive still got a lot to learn, but that’s what’s so exciting, there’s so much more
+                for me to discover and I can’t wait to get my hands dirty!</p>
+              <p class="largertxt">What am I up to currently? Lots! I’m dipping my toes into the world of React
+                which is awesome and super enjoyable to use, I love a good challenge so It’s been fun trying to get my head around it.</p>
+              <p class="largertxt">What do I get up to when I’m not pushing code? Well you can find me playing Rugby with the Stockholm Berserkers,
+                 playing computer games (well mainly World of Warcraft...yes I know I have a problem), baking tasty goodies, drinking tea,
+                 and out walking/jogging with my dog, Leeloo!</p>
+          </div>
+        </div>
+            <h2 class="spacing my-photos-title">A small window into my life...</h2>
+            <div class="row my-photos my-photos-one slide-in">
+              <div class="col-md-3 col-sm-3 photos">
+              <img class="pic-row-one" src="./images/me/me1.jpg" alt="img1" />
+              </div>
+              <div class="col-md-3 col-sm-3 photos">
+              <img class="pic-row-one" src="./images/me/me3.jpg" alt="img2" />
+              </div>
+              <div class="col-md-3 col-sm-3 photos">
+              <img class="pic-row-one" src="./images/me/me2.jpg" alt="img3" />
+              </div>
+              <div class="col-md-3 col-sm-3 photos">
+              <img class="pic-row-one" src="./images/me/me4.jpg" alt="img4" />
+              </div>
+              </div>
+              <div class="row my-photos my-photos-two slide-in">
+              <div class="col-md-3 col-sm-3 photos">
+              <img class="pic-row-two" src="./images/me/me5.jpg" alt="img5" />
+              </div>
+              <div class="col-md-3 col-sm-3 photos">
+              <img class="pic-row-two" src="./images/me/me6.jpg" alt="img6" />
+              </div>
+              <div class="col-md-3 col-sm-3 photos">
+              <img class="pic-row-two" src="./images/me/me8.jpg" alt="img7" />
+              </div>
+              <div class="col-md-3 col-sm-3 photos">
+              <img class="pic-row-two" src="./images/me/me7.jpg" alt="img8" />
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT END -->
+    <!-- PROJECTS -->
+    <div class="jumbotron vertical-center">
+      <div class="container projects" id="projects">
+        <h2 class="spacing">A few bits and pieces</h2>
+        <p class="largertxt projects-info">Here I have a handfull of things that have kept me busy.
+          I like to use CodePen a lot to tinker around and try new things. So if you'd like to see more of
+          what I get up to, you're very welcome to have a look at my
+          <a href="https://codepen.io/lmutton/pens/popular/#" class="project-text-link" target="_blank">CodePen</a>.
+        </p>
+        <!--<div class="row project-row">
+          <div class="col-md-6 col-sm-12">
+            <img src="./images/jsccsui.png" class="image-col" alt="img1"/>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="project-text">
+              <h3 class="spacing">JavaScript, CSS and UIs</h3>
+              <p class="largertxt"> description</p>
+              <div class="button-container">
+                <button class="btn live">Live</button><button class="btn code">Code</button>
+              </div>
+            </div>
+          </div>
+        </div>-->
+    </div>
+  </div>
+    <!-- PROJECTS END -->
+    <!-- FOOTER -->
+    <footer>
+      Copyright© 2017 All rights reserved - Lorna Mutton<a href="https://github.com/lmutton" target="_blank"><span><i class="fa fa-github footer-icon"></i></span></a>
+      <a href="https://codepen.io/lmutton/" target="_blank"><span><i class="fa fa-codepen footer-icon"></i></span></a>
+      <br>Main photo 'Norway' taken by <a href="https://www.flickr.com/photos/raffebrasse/" target="_blank" class="raffe">Rafael Fernandes.</a>
+    </footer>
+    <!-- FOOTER END -->
 
 
-<footer>
-Copyright© 2017 All rights reserved - Lorna Mutton <a href="https://github.com/lmutton" target="_blank"><span><i class="fa fa-github footer-icon"></i></span></a>
-
-</footer>
-
-
-
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/js.js"></script>
-    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>
+  $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript" src="scripts/index.js"></script>
   </body>
 </html>
