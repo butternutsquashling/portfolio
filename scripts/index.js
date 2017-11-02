@@ -92,25 +92,27 @@
 window.addEventListener('load', function(){
   for(var i = 0; i < projectList.length; i++){
     var row = document.createElement('div');
-		row.setAttribute('class', 'row project-row');
     var collumOne = document.createElement('div');
-    collumOne.setAttribute('class', 'col-md-6 col-sm-12');
     var collumTwo = document.createElement('div');
-    collumTwo.setAttribute('class', 'col-md-6 col-sm-12');
     var projectText = document.createElement('div');
-    projectText.setAttribute('class', 'project-text');
     var projectInfo = document.createElement('p');
-    projectInfo.setAttribute('class', 'largertxt description');
-    projectInfo.innerHTML = projectList[i].description;
     var buttons = document.createElement('div');
+		row.setAttribute('class', 'row project-row');
+    collumOne.setAttribute('class', 'col-md-6 col-sm-12');
+    collumTwo.setAttribute('class', 'col-md-6 col-sm-12');
+    projectText.setAttribute('class', 'project-text');
+    projectInfo.setAttribute('class', 'largertxt description');
     buttons.setAttribute('class', 'button-container');
+    projectInfo.innerHTML = projectList[i].description;
     buttons.innerHTML = projectList[i].live + projectList[i].code;
     projectText.innerHTML = projectList[i].title;
-    projectText.append(projectInfo)
     collumOne.innerHTML = projectList[i].img;
-    collumTwo.append(projectText, buttons);
-    row.append(collumOne, collumTwo);
-    document.getElementById('projects').append(row);
+    projectText.appendChild(projectInfo);
+    collumTwo.appendChild(projectText);
+    collumTwo.appendChild(buttons);
+    row.appendChild(collumOne);
+    row.appendChild(collumTwo);
+    document.getElementById('projects').appendChild(row);
   }
 });
 
