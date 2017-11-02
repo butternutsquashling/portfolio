@@ -8,7 +8,7 @@
 
 
 window.addEventListener('load', function(){
-  if (/MSIE 9/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) || /Edge\/\d./i.test(navigator.userAgent)) {
+  if (/MSIE 9/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
     nav.className += ' active-nav';
     document.querySelector('.my-photos-one').className += ' activeL';
     document.querySelector('.my-photos-two').className += ' activeR';
@@ -65,7 +65,7 @@ window.addEventListener('load', function(){
 //HANDLE SCROLL EFFECTS
   function handleScrollEffects(){
 //TO SHOW 'GO TO TOP BUTTON' AND NAVBAR
-      if (/MSIE 9/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) || /Edge\/\d./i.test(navigator.userAgent)) {
+      if (/MSIE 9/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
       return;
       }else{
       if(window.scrollY > 100){
