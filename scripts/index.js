@@ -33,24 +33,30 @@
 
 //HANDLE SCROLL EFFECTS
   function handleScrollEffects(){
-//TO SHOW 'GO TO TOP BUTTON' AND NAVBAR
-    if(window.scrollY > 100){
-      topButton.classList.add('active-top');
-      nav.classList.add('active-nav');
+    if (/MSIE 9/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
+      topButton.className += ' active-top';
+      nav.className += ' active-nav';
     }else{
-      topButton.classList.remove('active-top');
-      nav.classList.remove('active-nav');
-    }
-//TO SLIDE IN PICTURES OF ME
-    const oneSlideInAt = (window.scrollY + window.innerHeight) - aboutContainer.clientHeight / 1.6;
-    const twoSlideInAt = (window.scrollY + window.innerHeight) - aboutContainer.clientHeight / 1.2;
-    const HalfIsShownOne = oneSlideInAt > aboutContainer.offsetTop;
-    const HalfIsShownTwo = twoSlideInAt > aboutContainer.offsetTop;
-    if(HalfIsShownOne){
-      document.querySelector('.my-photos-one').classList.add('activeL');
-    }
-    if(HalfIsShownTwo){
-      document.querySelector('.my-photos-two').classList.add('activeR');
+//TO SHOW 'GO TO TOP BUTTON' AND NAVBAR
+      console.log(window.scrollY);
+      if(window.scrollY > 100){
+        topButton.className += ' active-top';
+        nav.className += ' active-nav';
+      }else{
+        topButton.classList.remove('active-top');
+        nav.classList.remove('active-nav');
+      }
+  //TO SLIDE IN PICTURES OF ME
+      const oneSlideInAt = (window.scrollY + window.innerHeight) - aboutContainer.clientHeight / 1.6;
+      const twoSlideInAt = (window.scrollY + window.innerHeight) - aboutContainer.clientHeight / 1.2;
+      const HalfIsShownOne = oneSlideInAt > aboutContainer.offsetTop;
+      const HalfIsShownTwo = twoSlideInAt > aboutContainer.offsetTop;
+      if(HalfIsShownOne){
+        document.querySelector('.my-photos-one').className += ' activeL';
+      }
+      if(HalfIsShownTwo){
+        document.querySelector('.my-photos-two').className += ' activeR';
+      }
     }
   }
 
