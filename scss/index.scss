@@ -80,7 +80,6 @@ body{
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  -ms-flex-pack: center;
   align-items: center;
   background-color: $white;
   margin: 0;
@@ -89,6 +88,10 @@ body{
 }
 .spacing{
   letter-spacing: 10px;
+}
+.spacingP{
+  letter-spacing: 3px;
+  font-size: 1.3rem;
 }
 .largertxt{
   color: $black-text;
@@ -343,6 +346,11 @@ footer{
 //FOOTER END
 //media queries
 @media screen and (min-width:  760px) and (max-width: 1366px){
+    .home{
+      .my-name{
+        margin-top: 0;
+      }
+    }
     .about{
       padding-top: 80px;
       padding-bottom: 20px;
@@ -388,6 +396,7 @@ footer{
         border-bottom: 2px solid $pink;
         padding-top: 50px;
         font-size: 3em;
+        margin-top: 0;
         max-width: 280px;
       }
       .front-enddev{
