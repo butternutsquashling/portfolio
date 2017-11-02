@@ -1,5 +1,37 @@
-//**SCROLLING EFFECTS AND THROTTLE (TO KEEP CALLS TO A MINIMUM)**//
+window.addEventListener('load', function(){
+  if (/MSIE 9/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) || /Edge\/\d./i.test(navigator.userAgent)) {
+    topButton.className += ' active-top';
+    nav.className += ' active-nav';
+    document.querySelector('.my-photos-one').className += ' activeL';
+    document.querySelector('.my-photos-two').className += ' activeR';
+  }
 
+  for(var i = 0; i < projectList.length; i++){
+    var row = document.createElement('div');
+    var collumOne = document.createElement('div');
+    var collumTwo = document.createElement('div');
+    var projectText = document.createElement('div');
+    var projectInfo = document.createElement('p');
+    var buttons = document.createElement('div');
+		row.setAttribute('class', 'row project-row');
+    collumOne.setAttribute('class', 'col-md-6 col-sm-12');
+    collumTwo.setAttribute('class', 'col-md-6 col-sm-12');
+    projectText.setAttribute('class', 'project-text');
+    projectInfo.setAttribute('class', 'largertxt description');
+    buttons.setAttribute('class', 'button-container');
+    projectInfo.innerHTML = projectList[i].description;
+    buttons.innerHTML = projectList[i].live + projectList[i].code;
+    projectText.innerHTML = projectList[i].title;
+    collumOne.innerHTML = projectList[i].img;
+    projectText.appendChild(projectInfo);
+    collumTwo.appendChild(projectText);
+    collumTwo.appendChild(buttons);
+    row.appendChild(collumOne);
+    row.appendChild(collumTwo);
+    document.getElementById('projects').appendChild(row);
+  }
+});
+//**SCROLLING EFFECTS AND THROTTLE (TO KEEP CALLS TO A MINIMUM)**//
 //THROTTLE
   function throttle(fn, threshhold, scope) {
           threshhold || (threshhold = 250);
@@ -31,17 +63,14 @@
   const nav = document.querySelector('.navbar-light');
   const aboutContainer = document.querySelector('.about');
 
+
 //HANDLE SCROLL EFFECTS
   function handleScrollEffects(){
-    if (/MSIE 9/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
-      topButton.className += ' active-top';
-      nav.className += ' active-nav';
-    }else{
 //TO SHOW 'GO TO TOP BUTTON' AND NAVBAR
       console.log(window.scrollY);
       if(window.scrollY > 100){
-        topButton.className += ' active-top';
-        nav.className += ' active-nav';
+        topButton.classList.add('active-top');
+        nav.classList.add('active-nav');
       }else{
         topButton.classList.remove('active-top');
         nav.classList.remove('active-nav');
@@ -52,12 +81,12 @@
       const HalfIsShownOne = oneSlideInAt > aboutContainer.offsetTop;
       const HalfIsShownTwo = twoSlideInAt > aboutContainer.offsetTop;
       if(HalfIsShownOne){
-        document.querySelector('.my-photos-one').className += ' activeL';
+        document.querySelector('.my-photos-one').classList.add('activeL');
       }
       if(HalfIsShownTwo){
-        document.querySelector('.my-photos-two').className += ' activeR';
+        document.querySelector('.my-photos-two').classList.add('activeR');
       }
-    }
+
   }
 
   function ScrollTo(name) {
@@ -87,40 +116,12 @@
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
-
 //HANDLE SCROLL EFFECTS END
 
 //**EVENT LISTENERS**//
 //EVENTLISTENER FOR HANDLE SCROLL EFFECTS
   window.addEventListener('scroll', throttle(handleScrollEffects), 900);
-
 //**EVENT LISTENERS END**//
-window.addEventListener('load', function(){
-  for(var i = 0; i < projectList.length; i++){
-    var row = document.createElement('div');
-    var collumOne = document.createElement('div');
-    var collumTwo = document.createElement('div');
-    var projectText = document.createElement('div');
-    var projectInfo = document.createElement('p');
-    var buttons = document.createElement('div');
-		row.setAttribute('class', 'row project-row');
-    collumOne.setAttribute('class', 'col-md-6 col-sm-12');
-    collumTwo.setAttribute('class', 'col-md-6 col-sm-12');
-    projectText.setAttribute('class', 'project-text');
-    projectInfo.setAttribute('class', 'largertxt description');
-    buttons.setAttribute('class', 'button-container');
-    projectInfo.innerHTML = projectList[i].description;
-    buttons.innerHTML = projectList[i].live + projectList[i].code;
-    projectText.innerHTML = projectList[i].title;
-    collumOne.innerHTML = projectList[i].img;
-    projectText.appendChild(projectInfo);
-    collumTwo.appendChild(projectText);
-    collumTwo.appendChild(buttons);
-    row.appendChild(collumOne);
-    row.appendChild(collumTwo);
-    document.getElementById('projects').appendChild(row);
-  }
-});
 
 const projectList = [
   {
