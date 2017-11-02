@@ -80,6 +80,7 @@ body{
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
+  -ms-flex-pack: center;
   align-items: center;
   background-color: $white;
   margin: 0;
@@ -106,7 +107,6 @@ body{
   background-position: center;
   text-align: center;
   color: $white;
-  padding-top: 100px;
   border-radius: 0px;
   .my-name, .front-enddev{
     font-family: 'Didact Gothic', sans-serif;
@@ -118,6 +118,8 @@ body{
   .my-name{
     font-size: 3.7rem;
     letter-spacing: 11px;
+    margin-top: 100px;
+
   }
   .main-links-container{
     margin-top: 80px;
