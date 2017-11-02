@@ -66,7 +66,9 @@ window.addEventListener('load', function(){
 //HANDLE SCROLL EFFECTS
   function handleScrollEffects(){
 //TO SHOW 'GO TO TOP BUTTON' AND NAVBAR
-      console.log(window.scrollY);
+      if (/MSIE 9/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) || /Edge\/\d./i.test(navigator.userAgent)) {
+      return;
+      }else{
       if(window.scrollY > 100){
         topButton.classList.add('active-top');
         nav.classList.add('active-nav');
@@ -85,7 +87,7 @@ window.addEventListener('load', function(){
       if(HalfIsShownTwo){
         document.querySelector('.my-photos-two').classList.add('activeR');
       }
-
+    }
   }
 
   function ScrollTo(name) {
