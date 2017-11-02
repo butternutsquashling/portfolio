@@ -19,6 +19,8 @@ body{
   position: fixed;
   width: 100%;
   transform:translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
   transition: 0.5s;
   z-index: 3;
   .navbar-toggler{
@@ -32,6 +34,8 @@ body{
     &.collapsed{
       .fa-plus{
         transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
       }
     }
     &:focus{
@@ -42,6 +46,8 @@ body{
       z-index: 3;
       transition: 0.2s;
       transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
       display: block;
     }
   }
@@ -61,6 +67,8 @@ body{
 }
 .navbar-light.active-nav{
   transform:translateY(0%);
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
 }
 //NAVBAR END
 //DEFAULT
@@ -69,6 +77,9 @@ body{
   min-height: 100%;
   min-height: 100vh;
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   align-items: center;
   background-color: $white;
   margin: 0;
@@ -134,10 +145,14 @@ body{
     color: rgba(225,225,225, 0.8);
     margin-top: 80px;
     transform:translateY(0%);
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
     transition: 0.2s;
     &:hover{
       color: $pink;
       transform:translateY(10%);
+      -webkit-transform: translateY(10%);
+      -ms-transform: translateY(10%);
     }
   }
   .top-button{
@@ -153,6 +168,8 @@ body{
     opacity: 0;
     transition: all 0.5s;
     transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
     padding: 0px;
     z-index: 5;
     &:focus{
@@ -167,6 +184,8 @@ body{
   .top-button.active-top{
     opacity: 1;
     transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     &:hover{
       background-color: $pink;
     }
@@ -187,16 +206,24 @@ body{
   }
   .my-photos-one{
   transform:translateX(-60%) scale(0.9);
+  -webkit-transform: translateX(-60%) scale(0.9);
+  -ms-transform: translateX(-60%) scale(0.9);
   }
   .my-photos-two{
     transform:translateX(60%) scale(0.9);
+    -webkit-transform: translateX(60%) scale(0.9);
+    -ms-transform: translateX(60%) scale(0.9);
   }
   .slide-in.activeL{
     transform:translateX(0%) scale(1);
+    -webkit-transform:translateX(0%) scale(1);
+    -ms-transform:translateX(0%) scale(1);
     opacity:1;
   }
   .slide-in.activeR{
     transform:translateX(0%) scale(1);
+    -webkit-transform:translateX(0%) scale(1);
+    -ms-transform:translateX(0%) scale(1);
     opacity:1;
   }
   .slide-in{
@@ -340,6 +367,8 @@ footer{
   {
     .navbar-light{
       transform:translateY(0%);
+      -webkit-transform:translateY(0%);
+      -ms-transform:translateY(0%);
       padding-top: 5px;
       padding-bottom: 5px;
       .fa-plus{
