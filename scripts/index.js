@@ -1,3 +1,12 @@
+  const topButton = document.querySelector('.top-button');
+  const home = document.querySelector('.home');
+  const body = document.querySelector('body');
+  const mainLinks = document.querySelector('.main-links-container');
+  const icon = document.querySelector('.iconT');
+  const nav = document.querySelector('.navbar-light');
+  const aboutContainer = document.querySelector('.about');
+
+
 window.addEventListener('load', function(){
   if (/MSIE 9/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) || /Edge\/\d./i.test(navigator.userAgent)) {
     topButton.className += ' active-top';
@@ -54,16 +63,6 @@ window.addEventListener('load', function(){
           };
         }
 //THROTTLE END
-
-  const topButton = document.querySelector('.top-button');
-  const home = document.querySelector('.home');
-  const body = document.querySelector('body');
-  const mainLinks = document.querySelector('.main-links-container');
-  const icon = document.querySelector('.iconT');
-  const nav = document.querySelector('.navbar-light');
-  const aboutContainer = document.querySelector('.about');
-
-
 //HANDLE SCROLL EFFECTS
   function handleScrollEffects(){
 //TO SHOW 'GO TO TOP BUTTON' AND NAVBAR
