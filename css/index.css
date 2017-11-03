@@ -38,7 +38,8 @@ body {
     margin-left: 20px;
     letter-spacing: 3px;
     border: none;
-    background-color: transparent; }
+    background-color: transparent;
+    cursor: pointer; }
     .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
       outline: none;
       color: #d0817d; }
@@ -99,6 +100,7 @@ body {
     text-decoration: none;
     z-index: 2; }
     .home .main-links-container .main-links {
+      cursor: pointer;
       letter-spacing: 4px;
       padding-bottom: 5px;
       margin: 20px;
@@ -118,7 +120,8 @@ body {
     transform: translateY(0%);
     -webkit-transform: translateY(0%);
     -ms-transform: translateY(0%);
-    transition: 0.2s; }
+    transition: 0.2s;
+    cursor: pointer; }
     .home .fa-angle-double-down:hover {
       color: #d0817d;
       transform: translateY(10%);
@@ -140,7 +143,8 @@ body {
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     padding: 0px;
-    z-index: 5; }
+    z-index: 5;
+    cursor: pointer; }
     .home .top-button:focus {
       outline: none; }
     .home .top-button .fa-angle-double-up {
@@ -234,7 +238,8 @@ body {
       margin: 10px 10px 50px 10px;
       border-radius: 8px;
       border-bottom: 4px solid #d0817d;
-      border-right: 4px solid #d0817d; }
+      border-right: 4px solid #d0817d;
+      cursor: pointer; }
       .projects .button-container .live:hover, .projects .button-container .code:hover {
         background-color: #f2f2f2;
         color: #d0817d;
