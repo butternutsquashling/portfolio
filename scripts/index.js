@@ -145,6 +145,16 @@ const projectList = [
   },
   {
     id: '04',
+    img: '<img src="./images/projects/weather2.jpg" alt="Weather" class="image-col" />',
+    title: '<h3 class="spacing">Weather App</h3>',
+    description: 'Using a Weather API and based on the user\'s location of their IP, ' +
+                 'I can retrieve the weather in real-time for where they currently are, the background will also change to suit the weather. If needed ' +
+                 'they can also toggle between fahrenheit and celsius degrees. This is a responsive design.',
+    live: '<a href="https://lmutton.github.io/Weather/" target="_blank"><button class="btn live">Live</button></a>',
+    code: '<a href="https://github.com/lmutton/Weather" target="_blank"><button class="btn live">Code</button></a>'
+  },
+  {
+    id: '03',
     img: '<img src="./images/projects/twitch.png" alt="Twitch" class="image-col" />',
     title: '<h3 class="spacing">Twitch</h3>',
     description: 'With this little nifty piece, I added my favourite Twitch streamers ' +
@@ -152,16 +162,6 @@ const projectList = [
                  'navigate to their live stream! I can also sort the list so that those online or offline are only shown. ',
     live: '<a href="https://codepen.io/lmutton/full/LWOVXv/" target="_blank"><button class="btn live">Live</button></a>',
     code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Twitch_Viewer" target="_blank"><button class="btn live">Code</button></a>'
-  },
-  {
-    id: '03',
-    img: '<img src="./images/projects/weather.png" alt="Weather" class="image-col" />',
-    title: '<h3 class="spacing">Weather App</h3>',
-    description: 'Using a Weather API and based on the user\'s location of their IP, ' +
-                 'I can retrieve the weather in real-time for where they currently are. If needed ' +
-                 'they can also toggle between fahrenheit and celsius degrees.',
-    live: '<a href="https://codepen.io/lmutton/full/xqOBoG/" target="_blank"><button class="btn live">Live</button></a>',
-    code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Weather_App" target="_blank"><button class="btn live">Code</button></a>'
   },
   {
     id: '02',
