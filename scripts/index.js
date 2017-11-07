@@ -149,7 +149,7 @@ const projectList = [
     title: '<h3 class="spacing">Weather App</h3>',
     description: 'Using a Weather API and based on the user\'s location of their IP, ' +
                  'I can retrieve the weather in real-time for where they currently are, the background will also change to suit the weather. If needed ' +
-                 'they can also toggle between fahrenheit and celsius degrees. This is a responsive design.',
+                 'they can also toggle between fahrenheit and celsius degrees.',
     live: '<a href="https://lmutton.github.io/Weather/" target="_blank"><button class="btn live">Live</button></a>',
     code: '<a href="https://github.com/lmutton/Weather" target="_blank"><button class="btn live">Code</button></a>'
   },
