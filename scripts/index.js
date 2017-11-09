@@ -125,7 +125,7 @@ window.addEventListener('load', function(){
 
 const projectList = [
   {
-    id: '06',
+    id: '07',
     img: '<img src="./images/projects/jsccsui.png" alt="JavaScript, CSS, UIs" class="image-col" />',
     title: '<h3 class="spacing">JavaScript, CSS and UIs</h3>',
     description: 'This is an ongoing side project that I built with React. Its a much larger collection of daily ' +
@@ -135,7 +135,7 @@ const projectList = [
     code: '<a href="https://github.com/lmutton/UIs-and-CSS" target="_blank"><button class="btn live">Code</button></a>'
   },
   {
-    id: '05',
+    id: '06',
     img: '<img src="./images/projects/calc.png" alt="Calculator" class="image-col" />',
     title: '<h3 class="spacing">Calculator</h3>',
     description: 'This is a fully functioning calculator that I built using jQuery. It made for good practice ' +
@@ -144,8 +144,18 @@ const projectList = [
     code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Calculator" target="_blank"><button class="btn live">Code</button></a>'
   },
   {
+    id: '05',
+    img: '<img src="./images/projects/landing.jpg" alt="Landing" class="image-col" />',
+    title: '<h3 class="spacing">Landing Page</h3>',
+    description: 'This is a UI design that I am really proud of. ' +
+                 'It\'s part of the UI challenege that I follow. Cool huh? ' +
+                 'It\'s simple and clean which I really like.' ,
+    live: '<a href="https://codepen.io/lmutton/full/rYjeeE/" target="_blank"><button class="btn live">Live</button></a>',
+    code: '<a href="https://github.com/lmutton/Mini_Projs/tree/master/LandingPage" target="_blank"><button class="btn live">Code</button></a>'
+  },
+  {
     id: '04',
-    img: '<img src="./images/projects/weather2.jpg" alt="Weather" class="image-col" />',
+    img: '<img src="./images/projects/weather.jpg" alt="Weather" class="image-col" />',
     title: '<h3 class="spacing">Local Weather</h3>',
     description: 'Using a Weather API and based on the user\'s location of their IP, ' +
                  'I can retrieve the weather in real-time for where they currently are, the background will also change to suit the weather. If needed ' +
