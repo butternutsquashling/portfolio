@@ -1,27 +1,21 @@
 $white: #f2f2f2;
-$black-text: #3e4447;
-$pink: #d0817d;
-$light-pink: #d8a19f;
+$black-text: #2D2D2D;
 $grey: #eaebec;
-$bg-black: #282e33;
-
-
+$bg-black: #151e26;
+$primary: #1abc9c;
+$secondary: #16a085;
 
 body{
   background-color: $white;
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
-
 
 //NAVBAR
 .navbar-light{
-  background-color: $white;
+  background-color: transparent;
   position: fixed;
   width: 100%;
-  transform:translateY(-100%);
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transition: 0.5s;
+  transition: all 0.8s;
   z-index: 3;
   .navbar-toggler{
     border: none;
@@ -42,7 +36,7 @@ body{
       outline: none;
     }
     .fa-plus{
-      color: $black-text;
+      color: $primary;
       z-index: 3;
       transition: 0.2s;
       transform: rotate(45deg);
@@ -52,24 +46,45 @@ body{
     }
   }
   .navbar-nav{
+    .github-link{
+      max-width: 95px;
+    }
+    .codepen-link{
+      max-width: 112px;
+    }
     .nav-link{
-      color: $black-text;
-      margin-left: 20px;
+      font-weight: bold;
+      color: $white;
+      margin-left: 50px;
       letter-spacing: 3px;
       border: none;
       background-color: transparent;
       cursor: pointer;
-      &:hover, &:focus{
+      height: 40px;
+      &:hover{
+        border-bottom: 2px solid $primary;
+        color: $primary;
+      }
+      &:focus, &:active{
         outline: none;
-        color:  $pink;
+        box-shadow: none;
       }
     }
   }
 }
 .navbar-light.active-nav{
-  transform:translateY(0%);
-  -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
+  background-color: $white;
+  .nav-link{
+    color: $black-text;
+    &:hover{
+      border-bottom: 2px solid $primary;
+      color: $primary;
+    }
+    &:focus, &:active{
+      outline: none;
+      box-shadow: none;
+    }
+  }
 }
 //NAVBAR END
 //DEFAULT
@@ -88,76 +103,62 @@ body{
   padding-top: 50px;
 }
 .spacing{
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 .spacingP{
   letter-spacing: 3px;
-  font-size: 1.3rem;
+  font-size: 1.1em;
+
 }
 .largertxt{
   color: $black-text;
   text-align: justify;
-  font-size: 1.2rem;
-}
+  font-size: 1.2em;
 
+}
 //DEFAULT END
 //MAIN
 .home{
   min-height: 100%;
   min-height: 100vh;
-  background: url('../images/bg2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: $bg-black;
   text-align: center;
   color: $white;
   border-radius: 0px;
-  .my-name, .front-enddev{
-    font-family: 'Didact Gothic', sans-serif;
-    max-width: 600px;
+  .my-name, .main-text{
+    position: relative;
+    text-align: left;
     margin: 10px auto;
     padding: 20px;
-    letter-spacing: 10px;
-  }
-  .my-name{
-    font-size: 3.7rem;
-    letter-spacing: 11px;
-    margin-top: 100px;
-
-  }
-  .main-links-container{
-    margin-top: 80px;
-    text-decoration: none;
-    z-index: 2;
-    .main-links{
-      cursor: pointer;
-      letter-spacing: 4px;
-      padding-bottom: 5px;
-      margin: 20px;
-      font-size: 1rem;
-      border: none;
-      border-bottom: 2px solid $pink;
-      background-color: transparent;
-      text-decoration:none;
-      color: $white;
-      &:hover{
-        color: $pink;
-      }
-      &:focus{
-        outline: none;
-      }
+    letter-spacing: 5px;
+    z-index: 1;
+    font-family: 'Catamaran', sans-serif;
+    .hl{
+      color: $primary;
     }
   }
+  .my-name{
+    font-size: 4.3em;
+    letter-spacing: 8px;
+    text-align: left;
+    font-weight: 900;
+  }
+  .main-text{
+    font-size: 2.2em;
+    font-weight: 800;
+  }
   .fa-angle-double-down{
-    color: rgba(225,225,225, 0.8);
-    margin-top: 80px;
+    color: rgba(26, 188, 156,0.5);
+    position: absolute;
+    bottom: 100px;
+    font-size: 2.5em;
     transform:translateY(0%);
     -webkit-transform: translateY(0%);
     -ms-transform: translateY(0%);
     transition: 0.2s;
     cursor: pointer;
     &:hover{
-      color: $pink;
+      color: $primary;
       transform:translateY(10%);
       -webkit-transform: translateY(10%);
       -ms-transform: translateY(10%);
@@ -168,7 +169,7 @@ body{
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    background-color: $light-pink;
+    background-color: $secondary;
     color: $white;
     position: fixed;
     right: -60px;
@@ -196,7 +197,7 @@ body{
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     &:hover{
-      background-color: $pink;
+      background-color: $primary;
     }
   }
 }
@@ -205,10 +206,11 @@ body{
 //ABOUT
 .about{
   overflow: hidden;
-  padding: 80px 50px 50px 50px;
+  padding: 75px 50px 50px 50px;
   .high-light{
     letter-spacing: 2px;
-    color: $pink;
+    color: $secondary;
+    font-weight: bold;
   }
   .my-photos-title{
     margin-top: 50px;
@@ -255,13 +257,12 @@ body{
 //ABOUT END
 
 //PROJECTS
-
 .projects{
   border-top: 2px solid $grey;
   padding-top: 80px;
   .project-text-link{
     letter-spacing: 2px;
-    color: $pink;
+    color: $secondary;
     cursor: pointer;
     &:hover{
       color: $black-text;
@@ -281,7 +282,6 @@ body{
     }
   }
   .project-text{
-    //max-width: 550px;
     margin: 60px 10px 10px 10px;
     display:block;
     height: auto;
@@ -297,20 +297,17 @@ body{
   .button-container{
     text-align: center;
     .live, .code{
-      letter-spacing: 2px;
-      background-color: $light-pink;
+      font-weight: bold;
+      background-color: $secondary;
       color: $white;
       width: 75px;
       margin: 10px 10px 50px 10px;
-      border-radius: 8px;
-      border-bottom: 4px solid $pink;
-      border-right: 4px solid $pink;
+      border-radius: 3px;
+      box-shadow: 0px 8px 8px -5px rgba(0,0,0,0.3);
       cursor: pointer;
       &:hover{
-        background-color: $white;
-        color: $pink;
-        border-bottom: 4px solid $light-pink;
-        border-right: 4px solid $light-pink;
+        background-color: $primary;
+        color: $white;
       }
       &:focus{
         outline: none;
@@ -318,35 +315,13 @@ body{
     }
   }
 }
-
 //PROJECTS END
-
 //FOOTER
 footer{
-  color: $white;
-  background-color: $bg-black;
+  color: $black-text;
   text-align: center;
   padding: 15px;
-  .footer-icon{
-    color: $white;
-    padding-left: 8px;
-    &:hover{
-      color: $pink;
-    }
-    &:focus{
-      outline: none;
-    }
-  }
-  .raffe{
-    text-decoration: none;
-    color: $white;
-    &:hover{
-      color: $pink;
-    }
-    &:focus{
-      outline: none;
-    }
-  }
+  font-size: 0.9em;
 }
 //FOOTER END
 //media queries
@@ -354,6 +329,14 @@ footer{
     .home{
       .my-name{
         margin-top: 0;
+        font-size: 3.5em;
+      }
+      .main-text{
+        font-size: 1.8em;
+      }
+      .fa-angle-double-down{
+        position: absolute;
+        bottom: 50px;
       }
     }
     .about{
@@ -381,11 +364,21 @@ footer{
 @media screen and (max-width: 760px)
   {
     .navbar-light{
-      transform:translateY(0%);
-      -webkit-transform:translateY(0%);
-      -ms-transform:translateY(0%);
-      padding-top: 5px;
-      padding-bottom: 5px;
+      background-color: $white;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      .navbar-nav{
+        .nav-link{
+          color: $black-text;
+          margin-left: 8px;
+        }
+        .github-link{
+          max-width: 82px;
+        }
+        .codepen-link{
+          max-width: 99px;
+        }
+       }
       .fa-plus{
         font-size: 1em;
       }
@@ -395,33 +388,34 @@ footer{
     }
     .largertxt{
       text-align: left;
+      font-size: 1em;
+    }
+    .spacing{
+      font-size: 1.4em;
+      padding-top: 5px;
+    }
+    .spacingP{
+      font-size: 1.1em;
     }
     .home{
       .my-name{
-        border-bottom: 2px solid $pink;
-        padding-top: 50px;
-        font-size: 3em;
+        font-size: 2.5em;
         margin-top: 0;
-        max-width: 280px;
       }
-      .front-enddev{
-        font-size: 2em;
-      }
-      .main-links-container{
-        display: none;
-      }
-      .main-links{
-        display: none;
+      .main-text{
+        font-size: 1.3em;
       }
       .fa-angle-double-down{
-        margin-top: 60px;
+        position: absolute;
+        bottom: 30px;
+        font-size: 1.6em;
+        color: $primary;
       }
       .top-button{
         width: 45px;
         height: 45px;
         bottom: 8px;
         right: 8px;
-        //box-shadow: 0px 0px 10px $black-text;
         &.active-top{
           opacity: 0.9;
         }

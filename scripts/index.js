@@ -6,7 +6,6 @@
   const nav = document.querySelector('.navbar-light');
   const aboutContainer = document.querySelector('.about');
 
-
 window.addEventListener('load', function(){
   if (/MSIE 9/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
     nav.className += ' active-nav';
@@ -64,6 +63,7 @@ window.addEventListener('load', function(){
 //THROTTLE END
 //HANDLE SCROLL EFFECTS
   function handleScrollEffects(){
+
 //TO SHOW 'GO TO TOP BUTTON' AND NAVBAR
       if (/MSIE 9/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
       return;
@@ -175,7 +175,7 @@ const projectList = [
   },
   {
     id: '02',
-    img: '<img src="./images/projects/video.png" alt="Video" class="image-col" />',
+    img: '<img src="./images/projects/video.jpg" alt="Video" class="image-col" />',
     title: '<h3 class="spacing">Custom Controls - HTML5 Video</h3>',
     description: 'Using HTML5’s video element along with JavaScript and some CSS3 magic, I was able to use my own design over the default video controls! ',
     live: '<a href="https://codepen.io/lmutton/full/WZYabM/" target="_blank"><button class="btn live">Live</button></a>',
