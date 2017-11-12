@@ -90,7 +90,7 @@ body {
 .home {
   min-height: 100%;
   min-height: 100vh;
-  background-color: #0e1720;
+  background-color: #091017;
   text-align: center;
   color: #f2f2f2;
   border-radius: 0px; }
@@ -115,7 +115,7 @@ body {
   .home .fa-angle-double-down {
     color: rgba(26, 188, 156, 0.5);
     position: absolute;
-    bottom: 100px;
+    bottom: 40px;
     font-size: 2.5em;
     transform: translateY(0%);
     -webkit-transform: translateY(0%);
