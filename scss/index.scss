@@ -12,10 +12,10 @@ body{
 
 //NAVBAR
 .navbar-light{
-  background-color: transparent;
+  background-color: $bg-black;
   position: fixed;
   width: 100%;
-  transition: all 0.8s;
+  transition: all 0.5s;
   z-index: 3;
   .navbar-toggler{
     border: none;
@@ -61,6 +61,7 @@ body{
       background-color: transparent;
       cursor: pointer;
       height: 40px;
+      font-family: 'Open Sans', sans-serif;
       &:hover{
         border-bottom: 2px solid $primary;
         color: $primary;
@@ -150,7 +151,7 @@ body{
     font-weight: 800;
   }
   .fa-angle-double-down{
-    color: rgba(26, 188, 156,0.5);
+    color: $primary;
     position: absolute;
     bottom: 40px;
     font-size: 2.5em;
@@ -160,7 +161,7 @@ body{
     transition: 0.2s;
     cursor: pointer;
     &:hover{
-      color: $primary;
+      color: $white;
       transform:translateY(10%);
       -webkit-transform: translateY(10%);
       -ms-transform: translateY(10%);
@@ -194,7 +195,7 @@ body{
     }
   }
   .top-button.active-top{
-    opacity: 1;
+    opacity: 0.9;
     transform: scale(1);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -373,6 +374,8 @@ footer{
         .nav-link{
           color: $black-text;
           margin-left: 8px;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
         }
         .github-link{
           max-width: 82px;
