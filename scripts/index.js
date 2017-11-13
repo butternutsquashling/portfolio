@@ -68,7 +68,7 @@ window.addEventListener('load', function(){
       if (/MSIE 9/i.test(navigator.userAgent) || /MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
       return;
       }else{
-      if(window.scrollY > 100){
+      if(window.scrollY > 400){
         topButton.classList.add('active-top');
         nav.classList.add('active-nav');
       }else{

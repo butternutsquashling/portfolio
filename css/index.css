@@ -3,7 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif; }
 
 .navbar-light {
-  background-color: transparent;
+  background-color: #091017;
   position: fixed;
   width: 100%;
   transition: all 0.5s;
