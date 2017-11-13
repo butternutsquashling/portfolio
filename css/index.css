@@ -114,7 +114,7 @@ body {
     font-size: 2.2em;
     font-weight: 800; }
   .home .fa-angle-double-down {
-    color: rgba(26, 188, 156, 0.5);
+    color: #1abc9c;
     position: absolute;
     bottom: 40px;
     font-size: 2.5em;
@@ -124,7 +124,7 @@ body {
     transition: 0.2s;
     cursor: pointer; }
     .home .fa-angle-double-down:hover {
-      color: #1abc9c;
+      color: #f2f2f2;
       transform: translateY(10%);
       -webkit-transform: translateY(10%);
       -ms-transform: translateY(10%); }
