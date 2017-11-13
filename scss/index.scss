@@ -1,7 +1,7 @@
 $white: #f2f2f2;
 $black-text: #2D2D2D;
 $grey: #eaebec;
-$bg-black: #091017;
+$bg-black: #040427;
 $primary: #1abc9c;
 $secondary: #16a085;
 
@@ -193,7 +193,7 @@ body{
     }
   }
   .top-button.active-top{
-    opacity: 1;
+    opacity: 0.9;
     transform: scale(1);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
