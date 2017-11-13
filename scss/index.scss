@@ -15,7 +15,7 @@ body{
   background-color: transparent;
   position: fixed;
   width: 100%;
-  transition: all 0.8s;
+  transition: all 0.5s;
   z-index: 3;
   .navbar-toggler{
     border: none;
@@ -61,6 +61,7 @@ body{
       background-color: transparent;
       cursor: pointer;
       height: 40px;
+      font-family: 'Open Sans', sans-serif;
       &:hover{
         border-bottom: 2px solid $primary;
         color: $primary;
@@ -371,6 +372,8 @@ footer{
         .nav-link{
           color: $black-text;
           margin-left: 8px;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
         }
         .github-link{
           max-width: 82px;

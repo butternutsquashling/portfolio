@@ -6,7 +6,7 @@ body {
   background-color: transparent;
   position: fixed;
   width: 100%;
-  transition: all 0.8s;
+  transition: all 0.5s;
   z-index: 3; }
   .navbar-light .navbar-toggler {
     border: none;
@@ -42,7 +42,8 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    height: 40px; }
+    height: 40px;
+    font-family: 'Open Sans', sans-serif; }
     .navbar-light .navbar-nav .nav-link:hover {
       border-bottom: 2px solid #1abc9c;
       color: #1abc9c; }
@@ -287,7 +288,9 @@ footer {
     padding-bottom: 8px; }
     .navbar-light .navbar-nav .nav-link {
       color: #2D2D2D;
-      margin-left: 8px; }
+      margin-left: 8px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold; }
     .navbar-light .navbar-nav .github-link {
       max-width: 82px; }
     .navbar-light .navbar-nav .codepen-link {
