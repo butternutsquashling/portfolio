@@ -125,6 +125,16 @@ window.addEventListener('load', function(){
 
 const projectList = [
   {
+    id: '08',
+    img: '<img src="./images/projects/pomodoro.png" alt="Pomodoro" class="image-col" />',
+    title: '<h3 class="spacing">Pomodoro Clock</h3>',
+    description: 'A simple Pomodoro clock that initially starts at 25mins, once the time has elapsed it will ' +
+                 'switch over to a break time. You can reset the clock and customize the length of both the work and break sessions. ' +
+                 'It also records how many rounds you have completed.',
+    live: '<a href="https://codepen.io/lmutton/full/JOrewj/" target="_blank"><button class="btn live">Live</button></a>',
+    code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Pomodoro" target="_blank"><button class="btn live">Code</button></a>'
+  },
+  {
     id: '07',
     img: '<img src="./images/projects/jsccsui.png" alt="JavaScript, CSS, UIs" class="image-col" />',
     title: '<h3 class="spacing">JavaScript, CSS and UIs</h3>',
