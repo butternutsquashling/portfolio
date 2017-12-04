@@ -183,31 +183,14 @@ const projectList = [
     live: '<a href="https://codepen.io/lmutton/full/LWOVXv/" target="_blank"><button class="btn live">Live</button></a>',
     code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Twitch_Viewer" target="_blank"><button class="btn live">Code</button></a>'
   },
-  {
-    id: '02',
-    img: '<img src="./images/projects/video.jpg" alt="Video" class="image-col" />',
-    title: '<h3 class="spacing">Custom Controls - HTML5 Video</h3>',
-    description: 'Using HTML5’s video element along with JavaScript and some CSS3 magic, I was able to use my own design over the default video controls! ',
-    live: '<a href="https://codepen.io/lmutton/full/WZYabM/" target="_blank"><button class="btn live">Live</button></a>',
-    code: '<a href="https://github.com/lmutton/30daysJS/tree/master/11html5customvideo" target="_blank"><button class="btn live">Code</button></a>'
-  },
 
   {
-    id: '01',
+    id: '02',
     img: '<img src="./images/projects/wiki.png" alt="Wiki" class="image-col" />',
     title: '<h3 class="spacing">Wikipedia Search</h3>',
     description: 'This was the first time that I used Ajax and it prepared me well for working with APIs again. ' +
                  'I learnt about how to retrieve specific pieces of information and how to display them.',
     live: '<a href="https://codepen.io/lmutton/full/dNpxYa/" target="_blank"><button class="btn live">Live</button></a>',
     code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Wiki_Viewer" target="_blank"><button class="btn live">Code</button></a>'
-  },
-  {
-    id: '00',
-    img: '<img src="./images/projects/canvas.png" alt="Canvas" class="image-col" />',
-    title: '<h3 class="spacing">HTML5 Canvas</h3>',
-    description: 'Using HTML5’s canvas element along with JavaScript, I was able to get to grips with using offsetX, offsetY and setting the canvas\'s  ' +
-                 'properties and using it\'s methods to produce this fun little artsy toy!',
-    live: '<a href="https://codepen.io/lmutton/full/XeVjra/" target="_blank"><button class="btn live">Live</button></a>',
-    code: '<a href="https://github.com/lmutton/30daysJS/tree/master/08Canvas" target="_blank"><button class="btn live">Code</button></a>'
-  },
+  }
 ]
