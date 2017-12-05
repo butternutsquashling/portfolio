@@ -125,7 +125,7 @@ window.addEventListener('load', function(){
 
 const projectList = [
   {
-    id: '08',
+    id: '07',
     img: '<img src="./images/projects/pomodoro.png" alt="Pomodoro" class="image-col" />',
     title: '<h3 class="spacing">Pomodoro Clock</h3>',
     description: 'A simple Pomodoro clock that initially starts at 25mins, once the time has elapsed it will ' +
@@ -135,7 +135,7 @@ const projectList = [
     code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Pomodoro" target="_blank"><button class="btn live">Code</button></a>'
   },
   {
-    id: '07',
+    id: '06',
     img: '<img src="./images/projects/jsccsui.png" alt="JavaScript, CSS, UIs" class="image-col" />',
     title: '<h3 class="spacing">JavaScript, CSS and UIs</h3>',
     description: 'This is an ongoing side project that I built with React. Its a much larger collection of daily ' +
@@ -145,7 +145,7 @@ const projectList = [
     code: '<a href="https://github.com/lmutton/UIs-and-CSS" target="_blank"><button class="btn live">Code</button></a>'
   },
   {
-    id: '06',
+    id: '05',
     img: '<img src="./images/projects/calc.png" alt="Calculator" class="image-col" />',
     title: '<h3 class="spacing">Calculator</h3>',
     description: 'This is a fully functioning calculator that I built using jQuery. It made for good practice ' +
@@ -154,17 +154,17 @@ const projectList = [
     code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Calculator" target="_blank"><button class="btn live">Code</button></a>'
   },
   {
-    id: '05',
-    img: '<img src="./images/projects/landing.jpg" alt="Landing" class="image-col" />',
-    title: '<h3 class="spacing">Landing Page</h3>',
-    description: 'This is a UI design that I am really proud of. ' +
-                 'It\'s part of the UI challenege that I follow. Cool huh? ' +
-                 'It\'s simple and clean which I really like.' ,
-    live: '<a href="https://codepen.io/lmutton/full/rYjeeE/" target="_blank"><button class="btn live">Live</button></a>',
-    code: '<a href="https://github.com/lmutton/Mini_Projs/tree/master/LandingPage" target="_blank"><button class="btn live">Code</button></a>'
+    id: '04',
+    img: '<img src="./images/projects/twitch.png" alt="Twitch" class="image-col" />',
+    title: '<h3 class="spacing">Twitch</h3>',
+    description: 'With this little nifty piece, I added a few Twitch streamers ' +
+                 'so that at an easy glance I can see who’s currently streaming and what they’re playing, then with a click I can ' +
+                 'navigate to their live stream! I can also sort the list so that those online or offline are only shown. ',
+    live: '<a href="https://codepen.io/lmutton/full/LWOVXv/" target="_blank"><button class="btn live">Live</button></a>',
+    code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Twitch_Viewer" target="_blank"><button class="btn live">Code</button></a>'
   },
   {
-    id: '04',
+    id: '03',
     img: '<img src="./images/projects/weather.jpg" alt="Weather" class="image-col" />',
     title: '<h3 class="spacing">Local Weather</h3>',
     description: 'Using a Weather API and based on the user\'s location of their IP, ' +
@@ -174,17 +174,6 @@ const projectList = [
     code: '<a href="https://github.com/lmutton/Weather" target="_blank"><button class="btn live">Code</button></a>'
   },
   {
-    id: '03',
-    img: '<img src="./images/projects/twitch.png" alt="Twitch" class="image-col" />',
-    title: '<h3 class="spacing">Twitch</h3>',
-    description: 'With this little nifty piece, I added my favourite Twitch streamers ' +
-                 'so that at an easy glance I can see who’s currently streaming and what they’re playing, then with a click I can ' +
-                 'navigate to their live stream! I can also sort the list so that those online or offline are only shown. ',
-    live: '<a href="https://codepen.io/lmutton/full/LWOVXv/" target="_blank"><button class="btn live">Live</button></a>',
-    code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Twitch_Viewer" target="_blank"><button class="btn live">Code</button></a>'
-  },
-
-  {
     id: '02',
     img: '<img src="./images/projects/wiki.png" alt="Wiki" class="image-col" />',
     title: '<h3 class="spacing">Wikipedia Search</h3>',
@@ -192,5 +181,15 @@ const projectList = [
                  'I learnt about how to retrieve specific pieces of information and how to display them.',
     live: '<a href="https://codepen.io/lmutton/full/dNpxYa/" target="_blank"><button class="btn live">Live</button></a>',
     code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Wiki_Viewer" target="_blank"><button class="btn live">Code</button></a>'
+  },
+  {
+    id: '01',
+    img: '<img src="./images/projects/landing.jpg" alt="Landing" class="image-col" />',
+    title: '<h3 class="spacing">Landing Page</h3>',
+    description: 'This is a UI design that I am really proud of. ' +
+                 'It\'s part of the UI challenege that I follow. ' +
+                 'It\'s simple and clean which I really like.' ,
+    live: '<a href="https://codepen.io/lmutton/full/rYjeeE/" target="_blank"><button class="btn live">Live</button></a>',
+    code: '<a href="https://github.com/lmutton/Mini_Projs/tree/master/LandingPage" target="_blank"><button class="btn live">Code</button></a>'
   }
 ]

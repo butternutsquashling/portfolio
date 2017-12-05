@@ -2,8 +2,8 @@ $white: #f2f2f2;
 $black-text: #2D2D2D;
 $grey: #eaebec;
 $bg-black: #091017;
-$primary: #1abc9c;
-$secondary: #16a085;
+$primary: #f5928b;//#1abc9c;
+$secondary: #d47770;//#16a085;
 
 body{
   background-color: $white;
@@ -63,14 +63,14 @@ body{
       height: 40px;
       font-family: 'Open Sans', sans-serif;
       &:hover{
-        border-bottom: 2px solid $primary;
-        color: $primary;
+        border-bottom: 2px solid $secondary;
+        color: $secondary;
       }
       &:focus, &:active{
         outline: none;
         box-shadow: none;
-        border-bottom: 2px solid $primary;
-        color: $primary;
+        border-bottom: 2px solid $secondary;
+        color: $secondary;
       }
     }
   }
@@ -80,14 +80,14 @@ body{
   .nav-link{
     color: $black-text;
     &:hover{
-      border-bottom: 2px solid $primary;
-      color: $primary;
+      border-bottom: 2px solid $secondary;
+      color: $secondary;
     }
     &:focus, &:active{
       outline: none;
       box-shadow: none;
-      border-bottom: 2px solid $primary;
-      color: $primary;
+      border-bottom: 2px solid $secondary;
+      color: $secondary;
     }
   }
 }
@@ -269,6 +269,7 @@ body{
     letter-spacing: 2px;
     color: $secondary;
     cursor: pointer;
+    font-weight: bold;
     &:hover{
       color: $black-text;
     }
