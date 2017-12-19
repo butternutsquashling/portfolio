@@ -131,7 +131,7 @@ const projectList = [
     description: 'A simple Pomodoro clock that initially starts at 25mins, once the time has elapsed it will ' +
                  'switch over to a break time. You can reset the clock and customize the length of both the work and break sessions. ' +
                  'It also records how many rounds you have completed.',
-    live: '<a href="https://codepen.io/lmutton/full/JOrewj/" target="_blank"><button class="btn live">Live</button></a>',
+    live: '<a href="https://codepen.io/butternut/full/JOrewj/" target="_blank"><button class="btn live">Live</button></a>',
     code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Pomodoro" target="_blank"><button class="btn live">Code</button></a>'
   },
   {
@@ -150,7 +150,7 @@ const projectList = [
     title: '<h3 class="spacing">Calculator</h3>',
     description: 'This is a fully functioning calculator that I built using jQuery. It made for good practice ' +
                  'when it came to Booleans and using regular expressions.',
-    live: '<a href="https://codepen.io/lmutton/full/KvJaOG/" target="_blank"><button class="btn live">Live</button></a>',
+    live: '<a href="https://codepen.io/butternut/full/KvJaOG/" target="_blank"><button class="btn live">Live</button></a>',
     code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Calculator" target="_blank"><button class="btn live">Code</button></a>'
   },
   {
@@ -160,7 +160,7 @@ const projectList = [
     description: 'With this little nifty piece, I added a few Twitch streamers ' +
                  'so that at an easy glance I can see who’s currently streaming and what they’re playing, then with a click I can ' +
                  'navigate to their live stream! I can also sort the list so that those online or offline are only shown. ',
-    live: '<a href="https://codepen.io/lmutton/full/LWOVXv/" target="_blank"><button class="btn live">Live</button></a>',
+    live: '<a href="https://codepen.io/butternut/full/LWOVXv/" target="_blank"><button class="btn live">Live</button></a>',
     code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Twitch_Viewer" target="_blank"><button class="btn live">Code</button></a>'
   },
   {
@@ -179,7 +179,7 @@ const projectList = [
     title: '<h3 class="spacing">Wikipedia Search</h3>',
     description: 'This was the first time that I used Ajax and it prepared me well for working with APIs again. ' +
                  'I learnt about how to retrieve specific pieces of information and how to display them.',
-    live: '<a href="https://codepen.io/lmutton/full/dNpxYa/" target="_blank"><button class="btn live">Live</button></a>',
+    live: '<a href="https://codepen.io/butternut/full/dNpxYa/" target="_blank"><button class="btn live">Live</button></a>',
     code: '<a href="https://github.com/lmutton/FCC/tree/master/FCC_Projects/Wiki_Viewer" target="_blank"><button class="btn live">Code</button></a>'
   },
   {
@@ -189,7 +189,7 @@ const projectList = [
     description: 'This is a UI design that I am really proud of. ' +
                  'It\'s part of the UI challenege that I follow. ' +
                  'It\'s simple and clean which I really like.' ,
-    live: '<a href="https://codepen.io/lmutton/full/rYjeeE/" target="_blank"><button class="btn live">Live</button></a>',
+    live: '<a href="https://codepen.io/butternut/full/rYjeeE/" target="_blank"><button class="btn live">Live</button></a>',
     code: '<a href="https://github.com/lmutton/Mini_Projs/tree/master/LandingPage" target="_blank"><button class="btn live">Code</button></a>'
   }
 ]
