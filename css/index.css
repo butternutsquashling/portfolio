@@ -53,22 +53,14 @@ body {
         left: 20%;
         font-size: 20px; }
         .main-container .outer-details-container .inner-details-container #about-details-container .details {
-          padding-bottom: 100px; }
+          padding-bottom: 70px; }
       .main-container .outer-details-container .inner-details-container #project-details-container {
         position: absolute;
-        top: 15%;
-        left: 15%;
+        top: 25%;
+        left: 20%;
         font-size: 20px; }
-        .main-container .outer-details-container .inner-details-container #project-details-container .image-container {
-          position: relative;
-          font-size: 15px;
-          width: 250px; }
-          .main-container .outer-details-container .inner-details-container #project-details-container .image-container div {
-            padding-bottom: 10px; }
-          .main-container .outer-details-container .inner-details-container #project-details-container .image-container .images {
-            height: auto;
-            width: 250px;
-            display: inline-block; }
+        .main-container .outer-details-container .inner-details-container #project-details-container .details {
+          padding-bottom: 20px; }
     .main-container .outer-details-container .button-container {
       width: 100%;
       display: flex;
